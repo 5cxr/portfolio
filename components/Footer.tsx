@@ -9,17 +9,6 @@ export default function Footer() {
         textAlign: 'center',
       }}
     >
-      <p
-        style={{
-          fontFamily: 'var(--font-caveat), cursive',
-          fontSize: '1.1rem',
-          color: 'var(--muted)',
-          margin: '0 0 0.85rem',
-        }}
-      >
-        built with graph paper and caffeine
-      </p>
-
       <div
         style={{
           display: 'flex',
@@ -29,8 +18,8 @@ export default function Footer() {
         }}
       >
         {[
-          { label: 'GitHub', href: 'https://github.com/s4r7h4k' },
-          { label: 'LinkedIn', href: 'https://linkedin.com/in/sarthak' },
+          { label: 'GitHub', href: 'https://github.com/5cxr' },
+          { label: 'LinkedIn', href: 'https://linkedin.com/in/s4r7h4k' },
           { label: 'Email', href: 'mailto:29sarthak@gmail.com' },
         ].map(({ label, href }) => (
           <a
@@ -45,17 +34,6 @@ export default function Footer() {
           </a>
         ))}
       </div>
-
-      <p
-        style={{
-          fontSize: '0.7rem',
-          color: 'var(--muted)',
-          marginTop: '1.25rem',
-          opacity: 0.55,
-        }}
-      >
-        © {new Date().getFullYear()} Sarthak
-      </p>
     </footer>
   );
 }

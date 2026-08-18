@@ -11,32 +11,18 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: 'Kilo — text editor',
+    name: 'VMrentals',
     description:
-      'A terminal-based text editor in ~1000 lines of C with syntax highlighting, search, and undo. Followed Snaptoken\'s guide then went off-road.',
-    tags: ['C', 'POSIX', 'terminal'],
-    href: 'https://github.com/s4r7h4k/kilo',
+      'Virtual machine rental platform built with a 3-member team. Worked on the middleware and web layer — wallet integration, request handling, and connecting the frontend to on-chain payment logic. Won 1st place at the Stellar Pune Hackathon.',
+    tags: ['JavaScript', 'Middleware', 'Web'],
+    href: 'https://github.com/yashranaway/vmrentals',
   },
   {
-    name: 'MiniSQL',
+    name: 'Kontri',
     description:
-      'A toy relational database with B-tree indexing, a SQL parser, and basic query planning. Persists data to disk.',
-    tags: ['C++', 'data structures', 'systems'],
-    href: 'https://github.com/s4r7h4k/minisql',
-  },
-  {
-    name: 'Paste.sh',
-    description:
-      'A minimal pastebin clone. Pastes expire, support syntax highlighting, and can be shared via short URLs. Built in a weekend.',
-    tags: ['Next.js', 'TypeScript', 'Redis', 'Vercel'],
-    href: 'https://github.com/s4r7h4k/paste-sh',
-  },
-  {
-    name: 'Arxiv Digest',
-    description:
-      'Daily email digest of ML papers filtered by keywords, sent via GitHub Actions + SendGrid. Saves me from Arxiv doomscrolling.',
-    tags: ['Python', 'GitHub Actions', 'APIs'],
-    href: 'https://github.com/s4r7h4k/arxiv-digest',
+      'Full-stack app for organizing and tracking group gift contributions — auth, room creation, contribution tracking, and equal bill splitting.',
+    tags: ['Next.js', 'Prisma', 'SQLite', 'Tailwind CSS'],
+    href: 'https://github.com/5cxr/kontri',
   },
 ];
 

@@ -5,33 +5,19 @@ import { useFadeIn } from '@/hooks/useFadeIn';
 const stack: { group: string; items: string[] }[] = [
   {
     group: 'Languages',
-    items: ['C', 'C++', 'Python', 'TypeScript', 'JavaScript', 'Rust', 'SQL'],
+    items: ['C/C++', 'Python', 'JavaScript', 'SQL', 'Java', 'HTML/CSS'],
   },
   {
     group: 'Frameworks & Libraries',
-    items: ['React', 'Next.js', 'Node.js', 'Express', 'FastAPI', 'PyTorch'],
+    items: ['Next.js', 'Prisma', 'Tailwind CSS', 'Pandas', 'NumPy', 'Matplotlib'],
   },
   {
     group: 'Tools & Infra',
-    items: [
-      'Git',
-      'Linux',
-      'Docker',
-      'PostgreSQL',
-      'Redis',
-      'Vim',
-      'GitHub Actions',
-    ],
+    items: ['Git', 'VS Code', 'NeoVim', 'Linux', 'SQLite'],
   },
   {
     group: 'Concepts',
-    items: [
-      'OS internals',
-      'Compilers',
-      'Data Structures',
-      'Distributed Systems',
-      'ML basics',
-    ],
+    items: ['Data Structures', 'Full-stack dev'],
   },
 ];
 

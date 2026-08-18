@@ -4,28 +4,12 @@ import { useFadeIn } from '@/hooks/useFadeIn';
 
 const hobbies = [
   {
-    label: 'reading',
-    note: 'Currently: Surely You\'re Joking, Mr. Feynman — again.',
+    label: 'badminton',
+    note: 'Weekly games with friends — competitive when it counts.',
   },
   {
-    label: 'math puzzles',
-    note: 'Project Euler, competitive programming for fun, occasional USACO nostalgia.',
-  },
-  {
-    label: 'music',
-    note: 'Mostly instrumental — lofi, jazz, and whatever Spotify decides I need at midnight.',
-  },
-  {
-    label: 'coffee',
-    note: 'South Indian filter coffee > everything. Fight me.',
-  },
-  {
-    label: 'open source rabbit holes',
-    note: 'Reading source code of tools I use. It started with curiosity, it became a problem.',
-  },
-  {
-    label: 'writing',
-    note: 'Occasional blog posts on things I figure out. Rubber duck therapy, essentially.',
+    label: 'gym',
+    note: 'Trying to be consistent about it, mostly succeeding.',
   },
 ];
 

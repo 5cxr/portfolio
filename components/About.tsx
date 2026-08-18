@@ -25,10 +25,10 @@ export default function About() {
               maxWidth: '600px',
             }}
           >
-            I&apos;m a third-year Computer Science student who gets unreasonably
-            excited about systems programming, compilers, and anything that runs
-            close to the metal. I like building things that are either genuinely
-            useful or genuinely interesting — ideally both.
+            I&apos;m a Computer Engineering student who likes building things
+            that actually ship. I enjoy working across the stack — figuring
+            out how pieces connect, and turning ideas into tools people can
+            actually use.
           </p>
           <p
             style={{
@@ -39,8 +39,8 @@ export default function About() {
               maxWidth: '600px',
             }}
           >
-            Currently looking for summer internships where I can contribute to
-            real problems, learn from sharp people, and ship actual code.
+            Currently looking for internships and interesting problems where I
+            can contribute, learn from sharp people, and ship actual code.
           </p>
         </div>
 
@@ -57,16 +57,16 @@ export default function About() {
             opacity: 0.9,
           }}
         >
-          <span>📍 Delhi, India</span>
-          <span>🎓 IIT Delhi · B.Tech CSE · 2022–2026</span>
-          <span>📅 3rd year</span>
+          <span>📍 Pune, Maharashtra</span>
+          <span>🎓 Vishwakarma University · B.Tech Computer Engineering · 2023–2027</span>
+          <span>📅 4th year · CGPA 8.63</span>
         </div>
 
         {/* Links */}
         <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
           {[
-            { label: 'GitHub', href: 'https://github.com/s4r7h4k' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/sarthak' },
+            { label: 'GitHub', href: 'https://github.com/5cxr' },
+            { label: 'LinkedIn', href: 'https://linkedin.com/in/s4r7h4k' },
             { label: 'Email', href: 'mailto:29sarthak@gmail.com' },
             { label: 'Resume', href: '/resume.pdf' },
           ].map(({ label, href }) => (

@@ -11,23 +11,22 @@ interface ExperienceEntry {
 
 const experiences: ExperienceEntry[] = [
   {
-    role: 'Software Engineering Intern',
-    company: 'Zeta Suite',
-    dates: 'May 2024 – Jul 2024',
+    role: 'Stellar Pune Hackathon — 1st Place',
+    company: 'VMrentals',
+    dates: '2025',
     bullets: [
-      'Built an internal dashboard for monitoring transaction pipelines, reducing mean time-to-detect for anomalies from ~20 min to under 3 min.',
-      'Migrated a legacy cron-based job scheduler to a Kafka-backed event-driven system; improved throughput by 4×.',
-      'Wrote load tests with k6, surfacing a PostgreSQL connection pool bottleneck that was silently dropping 2% of requests.',
+      'Secured 1st place among competing teams and a $500 prize for building a decentralized, blockchain-based VM rental platform.',
+      'Designed and presented a functional technical solution within a 3-member team under strict time constraints.',
     ],
   },
   {
-    role: 'Open Source Contributor',
-    company: 'FOSS Club, IIT Delhi',
-    dates: 'Aug 2023 – present',
+    role: 'Research Publication — IEEE Xplore',
+    company: 'ESCI 2025',
+    dates: '2025',
     bullets: [
-      'Maintain a student-run Gitea instance; handle infra, onboarding, and occasional fires at 2 AM.',
-      'Contributed small fixes and docs improvements to half a dozen projects — nothing glamorous, but it ships.',
-      'Ran two internal workshops on Git internals and terminal productivity tools.',
+      'Published a peer-reviewed paper: "Comprehensive Comparative Analysis of Food Classification Using YOLOv8n, VGG19, and InceptionV3."',
+      'Compared deep learning architectures for food image classification across accuracy, computational efficiency, and performance trade-offs.',
+      'DOI: 10.1109/ESCI63694.2025.10988355',
     ],
   },
 ];
@@ -37,7 +36,7 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={ref} className="fade-in-section">
-      <h2 className="section-heading">experience</h2>
+      <h2 className="section-heading">achievements</h2>
 
       <div
         style={{

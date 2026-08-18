@@ -76,7 +76,7 @@ export default function Hero() {
               letterSpacing: '0.01em',
             }}
           >
-            CS undergrad &nbsp;·&nbsp; builder &nbsp;·&nbsp; curious human
+            Computer Engineering student &nbsp;·&nbsp; builder &nbsp;·&nbsp; curious human
           </p>
 
           <p

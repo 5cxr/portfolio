@@ -17,8 +17,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: 'Sarthak — CS Student & Builder',
-  description: 'Portfolio of Sarthak, CS undergrad, builder, curious human.',
+  title: 'Sarthak Patankar — Computer Engineering Student & Builder',
+  description:
+    'Portfolio of Sarthak Patankar, Computer Engineering student at Vishwakarma University, full-stack & blockchain builder.',
 };
 
 export default function RootLayout({
