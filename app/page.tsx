@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
+import ActivityHeatmap from '@/components/ActivityHeatmap';
 import About from '@/components/About';
 import Stack from '@/components/Stack';
 import Projects from '@/components/Projects';
@@ -13,6 +14,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <div className="max-w-3xl mx-auto px-6 pb-24 space-y-28">
+        <ActivityHeatmap />
         <About />
         <Stack />
         <Projects />
