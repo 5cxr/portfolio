@@ -78,18 +78,6 @@ export default function Hero() {
           >
             Computer Engineering student &nbsp;·&nbsp; builder &nbsp;·&nbsp; curious human
           </p>
-
-          <p
-            style={{
-              fontFamily: 'var(--font-caveat), cursive',
-              fontSize: '1rem',
-              color: 'var(--muted)',
-              marginTop: '3.5rem',
-              opacity: 0.6,
-            }}
-          >
-            scroll down ↓
-          </p>
         </div>
 
         {/* Right: polaroid */}

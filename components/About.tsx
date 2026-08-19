@@ -68,7 +68,11 @@ export default function About() {
             { label: 'GitHub', href: 'https://github.com/5cxr' },
             { label: 'LeetCode', href: 'https://leetcode.com/u/5cxr/' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/s4r7h4k' },
-            { label: 'Resume', href: '/resume.pdf' },
+            { label: 'Email', href: 'mailto:sarthakpatankar7@gmail.com' },
+            {
+              label: 'Resume',
+              href: 'https://drive.google.com/file/d/14Z4TGe57XBJIjHqIAp6Z1vKdK9DjSVln/view?usp=sharing',
+            },
           ].map(({ label, href }) => (
             <a
               key={label}
@@ -78,7 +82,7 @@ export default function About() {
               className="ink-link"
               style={{ fontSize: '0.88rem' }}
             >
-              {label} ↗
+              {label}
             </a>
           ))}
         </div>
