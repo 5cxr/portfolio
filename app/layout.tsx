@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Caveat, Inter } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import GrainOverlay from '@/components/GrainOverlay';
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           <GrainOverlay />
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
