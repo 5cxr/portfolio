@@ -284,13 +284,13 @@ body {
 
 @media (max-width: 680px) {
   .hero-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2.5rem;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .polaroid {
-    width: 160px;
+    width: min(80vw, 280px);
     transform: rotate(2deg);
   }
 }

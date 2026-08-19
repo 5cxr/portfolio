@@ -90,10 +90,11 @@ export default function ActivityHeatmap() {
 
   return (
     <section ref={ref} className="fade-in-section">
+      <div style={{ overflowX: 'auto', paddingBottom: '2px' }}>
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: `repeat(${displayWeeks.length}, 1fr)`,
+          gridTemplateColumns: `repeat(${displayWeeks.length}, minmax(11px, 1fr))`,
           gap: '2px',
           position: 'relative',
         }}
@@ -121,6 +122,7 @@ export default function ActivityHeatmap() {
             ))}
           </div>
         ))}
+      </div>
       </div>
 
       <p
