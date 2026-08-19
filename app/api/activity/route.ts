@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 const GITHUB_USER = '5cxr';
 const LEETCODE_USER = '5cxr';
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 interface DayActivity {
   date: string;
@@ -15,7 +15,7 @@ async function getGithubContributions(): Promise<Record<string, number>> {
   try {
     const res = await fetch(
       `https://github-contributions-api.jogruber.de/v4/${GITHUB_USER}?y=last`,
-      { next: { revalidate: 3600 } }
+      { next: { revalidate: 300 } }
     );
     if (!res.ok) return {};
     const data = await res.json();

@@ -8,3 +8,5 @@ build/
 .env*.local
 .claude/settings.local.json
 tsconfig.tsbuildinfo
+.vercel
+.env*
