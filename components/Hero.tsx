@@ -105,7 +105,7 @@ export default function Hero() {
                 )}
               </div>
 
-              <p className="polaroid-caption">corny caption</p>
+              <p className="polaroid-caption">/ᐠ - ˕ -マ ᶻ 𝗓 𐰁</p>
             </div>
           </div>
         </div>

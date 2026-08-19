@@ -226,8 +226,8 @@ body {
 }
 
 .polaroid-caption {
-  font-family: var(--font-caveat), cursive;
-  font-size: 1rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.35rem;
   color: #333;
   text-align: center;
   margin-top: 10px;
@@ -239,8 +239,8 @@ body {
   position: absolute;
   width: 52px;
   height: 20px;
-  background: rgba(210, 200, 150, 0.55);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(192, 57, 43, 0.3);
+  border: 1px solid rgba(192, 57, 43, 0.45);
   top: -10px;
   z-index: 2;
 }
@@ -266,6 +266,21 @@ body {
 .tape-right {
   right: 16px;
   transform: rotate(6deg);
+}
+
+.dark .tape {
+  background: rgba(231, 76, 60, 0.3);
+  border: 1px solid rgba(231, 76, 60, 0.45);
+}
+
+.dark .tape::after {
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 4px,
+    rgba(255,255,255,0.05) 4px,
+    rgba(255,255,255,0.05) 5px
+  );
 }
 
 /* ─── Hero Layout ────────────────────────────────────────────────────── */
