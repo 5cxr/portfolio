@@ -85,62 +85,59 @@ export default function ActivityHeatmap() {
     };
   }, []);
 
+  const displayWeeks =
+    weeks ?? Array.from({ length: 53 }, () => Array(7).fill(null));
+
   return (
     <section ref={ref} className="fade-in-section">
-      <h2 className="section-heading">activity</h2>
-
-      <div style={{ overflowX: 'auto', paddingBottom: '0.5rem' }}>
-        <div
-          style={{
-            display: 'flex',
-            gap: '3px',
-            minWidth: 'fit-content',
-            position: 'relative',
-          }}
-          onMouseLeave={() => setHovered(null)}
-        >
-          {(weeks ?? Array.from({ length: 53 }, () => Array(7).fill(null))).map(
-            (week, wi) => (
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: `repeat(${displayWeeks.length}, 1fr)`,
+          gap: '2px',
+          position: 'relative',
+        }}
+        onMouseLeave={() => setHovered(null)}
+      >
+        {displayWeeks.map((week, wi) => (
+          <div
+            key={wi}
+            style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}
+          >
+            {week.map((cell, di) => (
               <div
-                key={wi}
-                style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}
-              >
-                {week.map((cell, di) => (
-                  <div
-                    key={di}
-                    onMouseEnter={() => cell && setHovered(cell)}
-                    style={{
-                      width: '10px',
-                      height: '10px',
-                      borderRadius: '2px',
-                      backgroundColor: cell
-                        ? levelColors[level(cell.total)]
-                        : 'transparent',
-                      cursor: cell ? 'pointer' : 'default',
-                    }}
-                  />
-                ))}
-              </div>
-            )
-          )}
-        </div>
-
-        <p
-          style={{
-            fontSize: '0.8rem',
-            color: 'var(--muted)',
-            marginTop: '0.75rem',
-            minHeight: '1.2rem',
-          }}
-        >
-          {hovered &&
-            `${hovered.date} — ${hovered.github} GitHub commit${
-              hovered.github === 1 ? '' : 's'
-            }, ${hovered.leetcode} LeetCode submission${
-              hovered.leetcode === 1 ? '' : 's'
-            }`}
-        </p>
+                key={di}
+                onMouseEnter={() => cell && setHovered(cell)}
+                style={{
+                  width: '100%',
+                  aspectRatio: '1 / 1',
+                  borderRadius: '2px',
+                  backgroundColor: cell
+                    ? levelColors[level(cell.total)]
+                    : 'transparent',
+                  cursor: cell ? 'pointer' : 'default',
+                }}
+              />
+            ))}
+          </div>
+        ))}
       </div>
+
+      <p
+        style={{
+          fontSize: '0.8rem',
+          color: 'var(--muted)',
+          marginTop: '0.75rem',
+          minHeight: '1.2rem',
+        }}
+      >
+        {hovered &&
+          `${hovered.date} — ${hovered.github} GitHub commit${
+            hovered.github === 1 ? '' : 's'
+          }, ${hovered.leetcode} LeetCode submission${
+            hovered.leetcode === 1 ? '' : 's'
+          }`}
+      </p>
     </section>
   );
 }

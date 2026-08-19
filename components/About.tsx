@@ -66,8 +66,8 @@ export default function About() {
         <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
           {[
             { label: 'GitHub', href: 'https://github.com/5cxr' },
+            { label: 'LeetCode', href: 'https://leetcode.com/u/5cxr/' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/s4r7h4k' },
-            { label: 'Email', href: 'mailto:29sarthak@gmail.com' },
             { label: 'Resume', href: '/resume.pdf' },
           ].map(({ label, href }) => (
             <a
