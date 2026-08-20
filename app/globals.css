@@ -234,54 +234,6 @@ body {
   line-height: 1.2;
 }
 
-/* Tape strips */
-.tape {
-  position: absolute;
-  width: 52px;
-  height: 20px;
-  background: rgba(192, 57, 43, 0.3);
-  border: 1px solid rgba(192, 57, 43, 0.45);
-  top: -10px;
-  z-index: 2;
-}
-
-.tape::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 4px,
-    rgba(0,0,0,0.03) 4px,
-    rgba(0,0,0,0.03) 5px
-  );
-}
-
-.tape-left {
-  left: 16px;
-  transform: rotate(-8deg);
-}
-
-.tape-right {
-  right: 16px;
-  transform: rotate(6deg);
-}
-
-.dark .tape {
-  background: rgba(231, 76, 60, 0.3);
-  border: 1px solid rgba(231, 76, 60, 0.45);
-}
-
-.dark .tape::after {
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 4px,
-    rgba(255,255,255,0.05) 4px,
-    rgba(255,255,255,0.05) 5px
-  );
-}
 
 /* ─── Hero Layout ────────────────────────────────────────────────────── */
 .hero-inner {

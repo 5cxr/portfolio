@@ -84,13 +84,10 @@ export default function Hero() {
         <div className="hero-photo">
           <div className="polaroid-wrap">
             <div className="polaroid">
-              <div className="tape tape-left" />
-              <div className="tape tape-right" />
-
               <div className="polaroid-photo">
                 {!imgError ? (
                   <Image
-                    src="/photo.jpg"
+                    src="/photo.jpeg"
                     alt="Sarthak"
                     fill
                     style={{ objectFit: 'cover' }}
