@@ -1,10 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
+  const [darkImgError, setDarkImgError] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
+
+  const useDarkPhoto = mounted && resolvedTheme === 'dark' && !darkImgError;
+  const photoSrc = useDarkPhoto ? '/photo-dark.jpeg' : '/photo.jpeg';
 
   return (
     <section
@@ -87,11 +96,14 @@ export default function Hero() {
               <div className="polaroid-photo">
                 {!imgError ? (
                   <Image
-                    src="/photo.jpeg"
+                    key={photoSrc}
+                    src={photoSrc}
                     alt="Sarthak"
                     fill
                     style={{ objectFit: 'cover' }}
-                    onError={() => setImgError(true)}
+                    onError={() =>
+                      useDarkPhoto ? setDarkImgError(true) : setImgError(true)
+                    }
                     priority
                   />
                 ) : (
