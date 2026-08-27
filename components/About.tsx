@@ -57,9 +57,9 @@ export default function About() {
             opacity: 0.9,
           }}
         >
-          <span>📍 Pune, Maharashtra</span>
-          <span>🎓 Vishwakarma University · B.Tech Computer Engineering · 2023–2027</span>
-          <span>📅 4th year · CGPA 8.63</span>
+          <span>CGPA 8.63</span>
+          <span>B.Tech CE @ Vishwakarma University</span>
+          <span>Pune</span>
         </div>
 
         {/* Links */}

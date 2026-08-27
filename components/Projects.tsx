@@ -2,11 +2,14 @@
 
 import { useFadeIn } from '@/hooks/useFadeIn';
 
+type ProjectStatus = 'Completed' | 'In Progress';
+
 interface Project {
   name: string;
   description: string;
   tags: string[];
   href: string;
+  status: ProjectStatus;
 }
 
 const projects: Project[] = [
@@ -16,6 +19,7 @@ const projects: Project[] = [
       'Virtual machine rental platform built with a 3-member team. Worked on the middleware and web layer — wallet integration, request handling, and connecting the frontend to on-chain payment logic. Won 1st place at the Stellar Pune Hackathon.',
     tags: ['JavaScript', 'Middleware', 'Web'],
     href: 'https://github.com/yashranaway/vmrentals',
+    status: 'Completed',
   },
   {
     name: 'Kontri',
@@ -23,6 +27,15 @@ const projects: Project[] = [
       'Full-stack app for organizing and tracking group gift contributions — auth, room creation, contribution tracking, and equal bill splitting.',
     tags: ['Next.js', 'Prisma', 'SQLite', 'Tailwind CSS'],
     href: 'https://github.com/5cxr/kontri',
+    status: 'Completed',
+  },
+  {
+    name: 'Blackjack',
+    description:
+      'Multiplayer blackjack with virtual currency — players join a shared table by room code, each gets their own hand against one dealer, turns go in sequence like a real casino table.',
+    tags: ['Next.js', 'Postgres', 'Drizzle', 'Redis', 'WebSockets'],
+    href: 'https://github.com/5cxr/blackjack',
+    status: 'In Progress',
   },
 ];
 
@@ -49,17 +62,41 @@ export default function Projects() {
             className="project-card"
             style={{ textDecoration: 'none', display: 'block' }}
           >
-            <h3
+            <div
               style={{
-                fontFamily: 'var(--font-caveat), cursive',
-                fontSize: '1.45rem',
-                color: 'var(--ink)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '0.5rem',
                 marginBottom: '0.4rem',
-                marginTop: 0,
               }}
             >
-              {project.name}
-            </h3>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-caveat), cursive',
+                  fontSize: '1.45rem',
+                  color: 'var(--ink)',
+                  margin: 0,
+                }}
+              >
+                {project.name}
+              </h3>
+              <span
+                style={{
+                  fontSize: '0.68rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.03em',
+                  textTransform: 'uppercase',
+                  padding: '0.2rem 0.5rem',
+                  borderRadius: '999px',
+                  whiteSpace: 'nowrap',
+                  color: project.status === 'Completed' ? 'var(--green, #2e7d32)' : 'var(--red)',
+                  border: `1px solid ${project.status === 'Completed' ? 'var(--green, #2e7d32)' : 'var(--red)'}`,
+                }}
+              >
+                {project.status}
+              </span>
+            </div>
             <p
               style={{
                 fontSize: '0.82rem',
