@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import GrainOverlay from '@/components/GrainOverlay';
+import ConstellationBackground from '@/components/ConstellationBackground';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <ConstellationBackground />
           <GrainOverlay />
           {children}
         </ThemeProvider>
