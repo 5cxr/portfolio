@@ -90,8 +90,8 @@ export default function Projects() {
                   padding: '0.2rem 0.5rem',
                   borderRadius: '999px',
                   whiteSpace: 'nowrap',
-                  color: project.status === 'Completed' ? 'var(--green, #2e7d32)' : 'var(--red)',
-                  border: `1px solid ${project.status === 'Completed' ? 'var(--green, #2e7d32)' : 'var(--red)'}`,
+                  color: project.status === 'Completed' ? 'var(--ink)' : 'var(--muted)',
+                  border: `1px solid ${project.status === 'Completed' ? 'var(--ink)' : 'var(--muted)'}`,
                 }}
               >
                 {project.status}
@@ -122,7 +122,7 @@ export default function Projects() {
                 marginBottom: 0,
               }}
             >
-              view on github ↗
+              view on github
             </p>
           </a>
         ))}
