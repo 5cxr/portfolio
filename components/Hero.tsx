@@ -18,11 +18,10 @@ export default function Hero() {
   return (
     <section
       style={{
-        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '6rem 1.5rem 4rem',
+        justifyContent: 'flex-start',
+        padding: '7rem 1.5rem 2rem',
         maxWidth: '960px',
         margin: '0 auto',
       }}

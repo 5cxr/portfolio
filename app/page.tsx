@@ -13,7 +13,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Nav />
       <Hero />
-      <div className="max-w-3xl mx-auto px-6 pb-24 space-y-28">
+      <div className="max-w-4xl mx-auto px-6 pt-8 pb-24 space-y-28">
         <ActivityHeatmap />
         <About />
         <Stack />
