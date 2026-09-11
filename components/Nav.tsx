@@ -16,7 +16,6 @@ export default function Nav() {
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '0.65rem 1.5rem',
-        borderBottom: '1px solid var(--grid)',
       }}
     >
       <a

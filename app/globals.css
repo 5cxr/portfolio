@@ -154,13 +154,7 @@ body {
 
 /* ─── Nav ────────────────────────────────────────────────────────────── */
 .nav-glass {
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  background-color: rgba(245, 245, 240, 0.7);
-}
-
-.dark .nav-glass {
-  background-color: rgba(13, 17, 23, 0.7);
+  background-color: transparent;
 }
 
 /* ─── Responsive Nav Links ───────────────────────────────────────────── */
