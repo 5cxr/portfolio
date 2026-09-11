@@ -7,26 +7,26 @@
   --paper: #f5f5f0;
   --ink: #1a1a2e;
   --grid: rgba(100, 149, 237, 0.25);
-  --red: #c0392b;
+  --red: #1a1a2e;
   --muted: #666;
   --heat-0: rgba(26, 26, 46, 0.08);
-  --heat-1: #e8b4ac;
-  --heat-2: #d67e6f;
-  --heat-3: #c85a45;
-  --heat-4: #a8301f;
+  --heat-1: #b8b8b8;
+  --heat-2: #888888;
+  --heat-3: #4d4d4d;
+  --heat-4: #1a1a1a;
 }
 
 .dark {
   --paper: #0d1117;
   --ink: #e8e8e8;
   --grid: rgba(255, 255, 255, 0.06);
-  --red: #e74c3c;
+  --red: #e8e8e8;
   --muted: #888;
   --heat-0: rgba(255, 255, 255, 0.06);
-  --heat-1: #5c2620;
-  --heat-2: #8f3226;
-  --heat-3: #c0392b;
-  --heat-4: #e74c3c;
+  --heat-1: #4d4d4d;
+  --heat-2: #888888;
+  --heat-3: #bbbbbb;
+  --heat-4: #f2f2f2;
 }
 
 /* ─── Base Styles ────────────────────────────────────────────────────── */
