@@ -11,7 +11,7 @@ interface ExperienceEntry {
 
 const experiences: ExperienceEntry[] = [
   {
-    role: 'Stellar Pune Hackathon — 1st Place',
+    role: 'Stellar Pune Hackathon: 1st Place',
     company: 'VMrentals',
     dates: '2025',
     bullets: [
@@ -20,7 +20,7 @@ const experiences: ExperienceEntry[] = [
     ],
   },
   {
-    role: 'Research Publication — IEEE Xplore',
+    role: 'Research Publication: IEEE Xplore',
     company: 'ESCI 2025',
     dates: '2025',
     bullets: [

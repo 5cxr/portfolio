@@ -134,7 +134,7 @@ export default function ActivityHeatmap() {
         }}
       >
         {hovered &&
-          `${hovered.date} — ${hovered.github} GitHub commit${
+          `${hovered.date}: ${hovered.github} GitHub commit${
             hovered.github === 1 ? '' : 's'
           }, ${hovered.leetcode} LeetCode submission${
             hovered.leetcode === 1 ? '' : 's'

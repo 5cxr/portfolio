@@ -19,7 +19,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: 'Sarthak Patankar — Computer Engineering Student & Builder',
+  title: 'Sarthak Patankar: Computer Engineering Student & Builder',
   description:
     'Portfolio of Sarthak Patankar, Computer Engineering student at Vishwakarma University, full-stack & blockchain builder.',
 };

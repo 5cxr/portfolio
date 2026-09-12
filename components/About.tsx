@@ -26,7 +26,7 @@ export default function About() {
             }}
           >
             I&apos;m a Computer Engineering student who likes building things
-            that actually ship. I enjoy working across the stack — figuring
+            that actually ship. I enjoy working across the stack, figuring
             out how pieces connect, and turning ideas into tools people can
             actually use.
           </p>

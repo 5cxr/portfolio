@@ -5,7 +5,7 @@ import { useFadeIn } from '@/hooks/useFadeIn';
 const hobbies = [
   {
     label: 'badminton',
-    note: 'Weekly games with friends — competitive when it counts.',
+    note: 'Weekly games with friends, competitive when it counts.',
   },
   {
     label: 'gym',
