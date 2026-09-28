@@ -16,26 +16,39 @@ const projects: Project[] = [
   {
     name: 'VMrentals',
     description:
-      'Virtual machine rental platform built with a 3-member team. Worked on the middleware and web layer: wallet integration, request handling, and connecting the frontend to on-chain payment logic. Won 1st place at the Stellar Pune Hackathon.',
+      'VM rental platform with on-chain payments. Built the middleware and wallet integration. 1st place at Stellar Pune Hackathon.',
     tags: ['JavaScript', 'Middleware', 'Web'],
     href: 'https://github.com/yashranaway/vmrentals',
     status: 'Completed',
   },
   {
     name: 'Kontri',
-    description:
-      'Full-stack app for organizing and tracking group gift contributions: auth, room creation, contribution tracking, and equal bill splitting.',
+    description: 'Track group gift contributions and split bills evenly.',
     tags: ['Next.js', 'Prisma', 'SQLite', 'Tailwind CSS'],
     href: 'https://github.com/5cxr/kontri',
     status: 'Completed',
   },
   {
     name: 'Blackjack',
-    description:
-      'Multiplayer blackjack with virtual currency. Players join a shared table by room code, each gets their own hand against one dealer, and turns go in sequence like a real casino table.',
+    description: 'Multiplayer blackjack. Join a table by room code and play in turn against one dealer.',
     tags: ['Next.js', 'Postgres', 'Drizzle', 'Redis', 'WebSockets'],
     href: 'https://github.com/5cxr/blackjack',
-    status: 'In Progress',
+    status: 'Completed',
+  },
+  {
+    name: 'macrowize',
+    description:
+      'Chat-based macro tracker. The LLM only parses meals; every number comes from a food table or USDA.',
+    tags: ['Python', 'Streamlit', 'LangChain', 'SQLAlchemy', 'Pydantic'],
+    href: 'https://github.com/5cxr/macrowize',
+    status: 'Completed',
+  },
+  {
+    name: 'Moview',
+    description: 'Letterboxd-style movie reviews with half-star ratings and JWT auth.',
+    tags: ['Spring Boot', 'React', 'MySQL', 'JWT'],
+    href: 'https://github.com/5cxr/moview',
+    status: 'Completed',
   },
 ];
 
